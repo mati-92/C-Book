@@ -6,7 +6,7 @@ using namespace std;
 int main(){
     char message[20] = "0123456789012345678";
     message[0] = 'H';
-    message[1] = 'E'
+    message[1] = 'E';
     message[2] = 'L';
     message[3] = 'L';
     message[4] = 'O';

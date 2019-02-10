@@ -20,5 +20,6 @@ int main(){
         cout << "data = " << **p++ << endl;
     }
     return(EXIT_SUCCESS);
+    // comment
 
 }
