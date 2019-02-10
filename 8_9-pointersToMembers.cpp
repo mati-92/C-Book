@@ -33,10 +33,17 @@ inline void sphere::assign_coordinate_and_radius(double x, double y, double z, d
 }
 
 void sphere::translated_sphere(sphere * pt, double d_x, double d_y, double d_z){
-    (*pt).x_centre += d_x;
-    (*pt).y_centre += d_y;
-    (*pt).z_centre += d_z;
-    (*pt).radius = radius;
+    //(*pt).x_centre += d_x;
+    //(*pt).y_centre += d_y;
+    //(*pt).z_centre += d_z;
+    //(*pt).radius = radius;
+
+    // or it can be written as shown below
+
+    pt->x_centre += d_x;
+    pt->y_centre += d_y;
+    pt->z_centre += d_z;
+    pt->radius = radius;
 }
 
 int main(){
