@@ -12,17 +12,19 @@ class node{
 };
 
 class list{
+    friend void print_list(const list &s);
     public: 
         list(void);
+        list(const list &s);
         ~list();
         void push(DATA_TYPE new_data);
         void pop(DATA_TYPE &old_data);
-        bool in_not_empty(void);
+        bool is_not_empty(void);
         private:
             node *head;
 };
 
-inline bool list::in_not_empty(void){
+inline bool list::is_not_empty(void){
     if (head == 0)
         return false;
     else 
